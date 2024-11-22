@@ -8,7 +8,7 @@
 #### Table of contents
 * [The problem](#the-problem)
 * [How to run this thing in 5 minutes?](#how-to-run-this-thing-in-5-minutes)
-* [Wanna learn more about LLMs and real-time ML?](#)
+* [Wanna learn more about LLMs and real-time ML?](#wanna-learn-more-about-llms-and-real-time-ml)
 
 
 ## The problem
@@ -72,4 +72,5 @@ make run
 
 ## Wanna learn more about LLMs and real-time ML?
 Join the Real-time ML adventure with me.
+
 [👉 Click here to know more](https://realtimeml.carrd.co/)
