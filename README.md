@@ -13,22 +13,63 @@
 
 ## The problem
 
+Say you want to build an ML service to extract crypto market signals from financial news.
+
+![Crypto sentiment analysis pipeline](./media/steps.gif)
+
+The output of such service can be piped into a predictive ML model, together with other predictive features, like real time market prices for all currencies, to come up with the best price prediction possible.
+
+We want to build a Python microservice that
+
+* given a news headline
+
+    ```news = "FED to increase interest rates"```
+
+* outputs a market signal and the reasoning behind this score.
+    ```
+    {
+    "signal": "bearish",
+    "reasoning": "The news about FED increasing interest rates is typically bearish for crypto markets for several reasons:\n1. Higher interest rates make borrowing more expensive, reducing liquidity in the market\n2. Higher rates make traditional yield-bearing investments more attractive compared to crypto\n3. Risk assets like cryptocurrencies tend to perform poorly in high interest rate environments\n4. Historically, crypto prices have shown negative correlation with interest rate hikes"
+    }
+    ```
+
+The signal is a categorial value with values
+
+- `bullish` (positive market impact)
+- `neutral` (neutral/unclear impact), or
+- `bearish` (negative market impact)
+
+Transforming raw input into a structured output is something LLMs excel at, so it makes sense we give them a try here.
+
+This is what I have implemented in this repo.
 
 ## How to run this thing in 5 minutes
 
 ### 1. Install `uv`
 
-### 2. Get your API at anthropic
+Install uv on Linux/Mac
 
-### 3. Run it
-```bash
-make run-examples
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+or on Windows
+
+```
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
 
-Install `uv`
+### 2. Get your API at anthropic
+In this example I am using Claude, so if you want to follow along you need to get your API key.
 
-2. Get an API key at anthropic.
+Alternatively, you could run an open-source LLM like Llama 3.2 using Ollama.
 
-3. Run a few examples
+### 3. See it in action
+```bash
+make run
+```
 
+## Wanna learn more about LLMs and real-time ML?
+Join the Real-time ML adventure with me.
+[👉 Click here to know more](https://realtimeml.carrd.co/)

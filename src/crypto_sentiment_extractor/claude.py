@@ -2,8 +2,6 @@ from typing import Optional, Literal
 import json
 from pydantic import BaseModel, Field
 
-from loguru import logger
-import pandas as pd
 from llama_index.llms.anthropic import Anthropic
 from llama_index.core.prompts import PromptTemplate
 
