@@ -73,4 +73,10 @@ make run
 ## Wanna learn more about LLMs and real-time ML?
 Join the Real-time ML adventure with me.
 
+No pre-recorded session.
+Everything is live.
+You and me.
+Step by step.
+From zero to SYSTEM.
+
 [👉 Click here to know more](https://realtimeml.carrd.co/)
