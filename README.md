@@ -70,7 +70,7 @@ Alternatively, you could run an open-source LLM like Llama 3.2 using Ollama.
 make run
 ```
 
-## Wanna learn more about LLMs and real-time ML?
+## Wanna build a real time ML system using LLMs?
 Join the Real-time ML adventure with me.
 
 No pre-recorded session.
